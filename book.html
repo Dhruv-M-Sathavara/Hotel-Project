@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo_div">
+            <img class="logo" src="https://img.freepik.com/premium-vector/hotel-logo-icon-vector-hotel-logo-silhouette-building-vector-illustration_1199258-5038.jpg" alt="Hotel Logo">
+        </div>
+
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="room.html">Rooms</a>
+            <a href="event.html">Events & Gallery</a>
+            <a href="book.html">Book Now</a>
+            <a href="loginpage.html">Login / Registration</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Hotel Booking Form</h2>
+            <form>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="idNo">ID Number</label>
+                <input type="text" id="idNo" name="idNo" required>
+    
+                <label for="idNo">No of Person</label>
+                <input type="text" id="idNo" name="Person" required>
+                
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required></textarea>
+                
+                <label for="arrivingDate">Arriving Date</label>
+                <input type="date" id="arrivingDate" name="arrivingDate" required>
+                
+                <label for="roomType">Select Room</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="luxury">Luxury Room</option>
+                    <option value="delux">Delux Room</option>
+                    <option value="family">Family Room</option>
+                </select>
+                
+                <label for="mealOption">Meal Included</label>
+                <input type="checkbox" id="mealOption" name="mealOption">
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
