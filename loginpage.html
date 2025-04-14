@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
@@ -12,11 +12,16 @@
         <img src="https://img.freepik.com/premium-vector/hotel-logo-icon-vector-hotel-logo-silhouette-building-vector-illustration_1199258-5038.jpg" alt="logo">
         <h1>Login</h1>
         <p>Login your account</p>
-        <input type="email" class="email" placeholder="Email or phone" required>
-        <input type="password" class="password" placeholder="Password" required>
-        <a href="#">Forgot your password?</a>
-        <a href="ragistration.html">New Register?</a>
-        <button>Login</button>
+
+    
+        <form action="login.php" method="POST">
+            <input type="email" name="email" class="email" placeholder="Email or phone" required>
+            <input type="password" name="password" class="password" placeholder="Password" required>
+            <a href="#">Forgot your password?</a>
+            <a href="ragistration.html">New Register?</a>
+            <button type="submit">Login</button>
+        </form>
+        
     </div>
 </body>
 </html>

@@ -11,11 +11,15 @@
         <img src="https://img.freepik.com/premium-vector/hotel-logo-icon-vector-hotel-logo-silhouette-building-vector-illustration_1199258-5038.jpg" alt="logo">
         <h1>Sign In</h1>
         <p>Register your account</p>
-        <input type="text" class="username" placeholder="Enter your username" required>
-        <input type="email" class="email" placeholder="Email or phone" required>
-        <input type="password" class="password" placeholder="Password" required>
-        <a href="loginpage.html">Already Registered?</a>
-        <button>Sign In</button>
+        <form action="register.php" method="POST">
+            <input type="text" name="username" class="username" placeholder="Enter your username" required>
+            <input type="email" name="email" class="email" placeholder="Email or phone" required>
+            <input type="password" name="password" class="password" placeholder="Password" required>
+            <a href="loginpage.html">Already Registered?</a>
+            <button type="submit">Sign In</button>
+        </form>
+        
+
     </div>
 </body>
 </html>
